@@ -1,0 +1,150 @@
+/* Gallery page style sheet */
+#mainBody{
+    max-width: 1200px;
+    height: 698px;
+    margin: 175px auto 25px;
+}
+
+.footer{
+    padding-right: 7rem;
+    padding-top: 5rem;
+}
+
+#galleryAndDescription {
+    width: 1200px;
+    height: 450px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#largeImage {
+    margin: 0 0;
+    width: 800px;
+    height: 450px;
+    float: left;
+    background: #fff;
+    box-shadow: 3px 3px 0 0 #de4f61;
+    border-radius: 2px;
+}
+
+#description {
+    width: 340px;
+    height: 200px;
+    float: left;
+    margin-left: 20px;
+    align-items: center;
+    background: #de4f61;
+    box-shadow: 3px 3px 0 0 #de4f61;
+    border-radius: 2px;
+}
+
+#thumbnailImages {
+    width: 1180px;
+    height: 128px;
+    margin: 10px;
+    margin-top: 20px;     
+}
+
+#fig1 ,#fig2 ,#fig3 ,#fig4 ,#fig5 {
+    width: 228px;
+    height: 128px;
+    margin: 0 0;
+    float: left;
+    background: #fff;
+    box-shadow: 3px 3px 0 0 #de4f61;
+    border-radius: 2px;
+}
+
+/* to add margin between other images accept for first image */
+#fig2 ,#fig3 ,#fig4 ,#fig5 {
+    margin-left: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    position: relative;
+}
+
+.slides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+/* redirect to different slides */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* animation for moving cursor */
+.next {
+    margin-left: 758px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Image Number */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 12px;
+    color: black;
+    float: left;
+    font-size: 14px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+    font-size:24px
+}
+/* for the picture Description */
+.thumbImage {
+    opacity: 0.6;
+    font-size: 30px;
+}
+
+.active,
+
+.thumbImage:hover {
+    opacity: 1;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard by Seth Rajarathne</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="../main_web_page/common_stylesheet_css.css">
+    <script src="leaderboard_page_js.js"></script>
+    <link rel="stylesheet" href="leaderboad_page_css.css">
+</head>  
+
+<!-- navigation bar -->
+<header class="header">
+    <a href="../main_web_page/main_web_page_html.html" class="logo"><img src="../main_web_page/logo.png" class="logo"> </a>
+
+    <nav class="navbar">
+        <!-- Home is used to redirect to the top -->
+        <a href="../main_web_page/main_web_page_html.html">Home</a>
+        <a href="../buy_page/buy_products_html.html">Buy</a>
+        <a href="../gallery_page/gallery_page_html.html">Gallery</a>
+        <a href="../quiz_page/quiz_page_html.html">Quiz</a>
+        <a href="#"  class="active">LeaderBoard</a>
+        <a href="../register_page/register_page_html.html">Register</a>
+        <a href="../signup_page/signup_page_html.html">SignUp</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us </button>
+            <div class="dropdown-content">
+                <a href="../aboutUs_page/aboutUs_html.html">Editors Page</a>
+                <a href="../aboutUs_page/uzman_editor_page.html">Student 1</a>
+                <a href="../aboutUs_page/haroon_editor_page.html">Student 2</a>
+                <a href="../aboutUs_page/gaindu_editor_page.html">Student 3</a>
+                <a href="../aboutUs_page/seth_editor_page.html">Student 4</a>
+            </div>
+        </div>   
+    </nav>
+</header>
+
+ <section class="button" id="button">
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <center>
+		<button type="button" class="button"
+			onclick="loadXMLDoc()">
+			Leader Board Summary
+		</button>
+	</center>
+ </section>
+	<br><br>
+	<table id="id"></table>
+    
+	<div class="menu-bar">
+		
+	    <h2 class="bgcolor">Background Color:</h2>
+	        <select id="background-color-select" onchange="changeBackgroundColor()">
+		        <option value="black">Black</option>
+                <option value="white">White</option>
+		        <option value="red">Red</option>
+		        <option value="green">Green</option>
+		        <option value="blue">Blue</option>
+	        </select>
+	
+	    <h2 class="textcolor">Text Color:</h2>
+	        <select id="text-color-select" onchange="changeTextColor()">
+		        <option value="white">White</option>
+                <option value="black">Black</option>		        
+		        <option value="red">Red</option>
+		        <option value="green">Green</option>
+		        <option value="blue">Blue</option>
+	        </select>
+    </div>
+   
+
+    <section class="footer">    
+        <div class="box-container">
+            <div class="box">
+                <h3> Fitness BOT</h3>
+                <p>
+                    Our goal at Fitness Bot is to provide you with the best experience in your fitness journey, 
+                    We help people in choosing their diets, to purchase quality products and provide them with the latest trends in fitness.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a>119</a>
+                <a>contactus@fitnessbot.com</a>
+                <a>IIT, Sri Lanka</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="../buy_page/buy_products_html.html">Buy products</a>
+                <a href="../gallery_page/gallery_page_html.html">Gallery Page</a>
+                <a href="../quiz_page/quiz_page_html.html">Quiz</a>
+                <a href="../register_page/register_page_html.html">Register</a>
+                <a href="#">LeaderBoard</a>
+            </div>
+
+            <div class="box">
+                <h3>About Us</h3>
+                <a href="../aboutUs_page/aboutUs_html.html">Editors</a>
+                <a href="../aboutUs_page/uzman_editor_page.html">Student 1</a>
+                <a href="../aboutUs_page/haroon_editor_page.html">Student 2</a>
+                <a href="../aboutUs_page/gaindu_editor_page.html">Student 3</a>
+                <a href="../aboutUs_page/seth_editor_page.html">Student 4</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<!-- footer -->
+<footer class="editor">
+        <h2><br>Editor: <a href="../aboutUs_page/seth_editor_page.html">Seth Rajarathne</a><br><br></h2>
+</footer>
+
+</html>

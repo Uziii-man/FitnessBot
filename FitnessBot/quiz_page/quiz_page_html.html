@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessBot || Quiz</title>
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="quiz_page_css.css">
+    <link rel="stylesheet" href="../main_web_page/common_stylesheet_css.css">
+    <!-- linking JS for the quiz -->
+    <script src="questions_script.js" async></script>
+    <script src="quiz_script.js" async></script>
+    
+</head>
+
+<!-- navigation bar -->
+<header class="header">
+    <a href="../main_web_page/main_web_page_html.html" class="logo"><img src="../main_web_page/logo.png" class="logo"> </a>
+
+    <nav class="navbar">
+        <!-- Home is used to redirect to the top -->
+        <a href="../main_web_page/main_web_page_html.html">Home</a>
+        <a href="../buy_page/buy_products_html.html">Buy</a>
+        <a href="../gallery_page/gallery_page_html.html">Gallery</a>
+        <a href="../quiz_page/quiz_page_html.html" class="active">Quiz</a>
+        <a href="../leaderboad_page/leaderboard_page_html.html">LeaderBoard</a>
+        <a href="../register_page/register_page_html.html">Register</a>
+        <a href="../signup_page/signup_page_html.html">SignUp</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us </button>
+            <div class="dropdown-content">
+                <a href="../aboutUs_page/aboutUs_html.html">Editors Page</a>
+                <a href="../aboutUs_page/uzman_editor_page.html">Student 1</a>
+                <a href="../aboutUs_page/haroon_editor_page.html">Student 2</a>
+                <a href="../aboutUs_page/gaindu_editor_page.html">Student 3</a>
+                <a href="../aboutUs_page/seth_editor_page.html">Student 4</a>
+            </div>
+        </div>   
+    </nav>
+</header>
+
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get a badge according the number of correct answers; 3, 4 or 5 correct answers will get you a Bronze, Silver or Gold badge respectively. Else you won't get a badge.</div>
+        </div>
+        <div class="buttons">
+            <a class="quit" href="../main_web_page/main_web_page_html.html">Exit Quiz</a>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Fitness Bot Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+    <section>
+        <div class="que_text">
+
+        </div>
+        <div class="option_list">
+
+        </div>
+    </section>
+
+        <!-- footer of Quiz Box -->
+        <footer class="quiz_footer ">
+            <div class="total_que">
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <a class="quit" href="../main_web_page/main_web_page_html.html">Exit</a>
+        </div>
+    </div>
+</body> 
+
+<!-- footer -->
+<footer>
+    <div class="editor_footer">
+        <h2><br>Editor: <a href="../aboutUs_page/haroon_editor_page.html">Mohamed Haroon</a><br><br></h2>
+    </div>
+</footer>
+
+
+</html>

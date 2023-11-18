@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration_page_css.css">
+    <link rel="stylesheet" href="../main_web_page/common_stylesheet_css.css">
+    <script src="register_form_js.js" ></script>
+    <title>Registration Form by Uzman Arfan</title>
+</head>
+<!-- navigation -->
+<!-- navigation bar -->
+<header class="header">
+  <a href="../main_web_page/main_web_page_html.html" class="logo"><img src="../main_web_page/logo.png" class="logo"> </a>
+
+  <nav class="navbar">
+      <!-- Home is used to redirect to the top -->
+      <a href="../main_web_page/main_web_page_html.html">Home</a>
+      <a href="../buy_page/buy_products_html.html">Buy</a>
+      <a href="../gallery_page/gallery_page_html.html">Gallery</a>
+      <a href="../quiz_page/quiz_page_html.html">Quiz</a>
+      <a href="../leaderboad_page/leaderboard_page_html.html">LeaderBoard</a>
+      <a href="#" class="active">Register</a>
+      <a href="../signup_page/signup_page_html.html">SignUp</a>
+      <div class="dropdown">
+          <button class="dropbtn">About Us </button>
+          <div class="dropdown-content">
+              <a href="../aboutUs_page/aboutUs_html.html">Editors Page</a>
+              <a href="../aboutUs_page/uzman_editor_page.html">Student 1</a>
+              <a href="../aboutUs_page/haroon_editor_page.html">Student 2</a>
+              <a href="../aboutUs_page/gaindu_editor_page.html">Student 3</a>
+              <a href="../aboutUs_page/seth_editor_page.html">Student 4</a>
+          </div>
+      </div>
+  </nav>
+
+</header>
+
+<!-- header -->
+
+<body>
+  <section class="register_section">
+  <div class="container">
+    <form id = "form" onsubmit="return validateForm()">
+      <h1 class="heading">Registration</h1>
+      <!-- name -->
+      <div class="inputbox">
+        <label class="labelname" for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter the name">
+        <p class="error" id="name-error"></p>
+      </div>
+      
+      <!-- age -->
+      <div class="inputbox">
+        <label class="labelname" for="age">Age</label>
+        <input type="text" id="age" placeholder="Enter the age">
+        <p class="error" id="age-error"></p>
+      </div>
+      
+      <!-- gender -->
+      <div class="inputbox">
+        <label class="labelname" for="gender">Gender:</label>
+        <select class="dropdown_sheet" id="gender" name="gender">
+          <option value="">Select a gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="not_specified">Not Specified</option>
+        </select>
+        <p class="error" id="gender-error"></p>
+      </div>
+
+      <!-- occupation -->
+      <div class="inputbox">
+        <label class="labelname" for="occupation">Occupation</label>
+        <input type="text" id="occupation" placeholder="Enter the occupation">
+        <p class="error" id="occupation-error"></p>
+      </div>
+
+      <!-- email -->
+      <div class="inputbox">
+        <label class="labelname" for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter the email">
+        <p class="error" id="email-error"></p>
+      </div>
+
+      <!-- physical activity -->
+      <div class="inputbox">
+        <label class="labelname" for="physical_activity">Physical Activity</label>
+        <select class="dropdown_sheet" id="physical_activity" name="physical_activity">
+          <option value="">Select type of activity</option>
+          <option value="1">Less than once a week</option>
+          <option value="2">1-2 times a week</option>
+          <option value="3">3-4 times a week</option>
+          <option value="4">5 or more times a week</option>
+        </select>
+        <p class="error" id="physical-activity-error"></p>
+      </div>
+
+      <!-- sleep duration -->
+      <div class="inputbox">
+        <label class="labelname" for="sleep_duration">Sleep Duration</label>
+        <select class="dropdown_sheet" id="sleep_duration" name="sleep_duration">
+          <option value="">Select sleep activity</option>
+          <option value="very-low-sleep">2 to 4 Hours</option>
+          <option value="low-sleep">4 to 6 Hours</option>
+          <option value="avg-sleep">6 to 8 Hours</option>
+          <option value="high-sleep">8 to 10 Hours</option>
+          <option value="very-high-sleep">10 Hours +</option>
+        </select>
+        <p class="error" id="sleep-error"></p>
+      </div>
+
+      <!-- fitness goal -->
+      <div class="inputbox">
+        <label class="labelname" for="fitness_goal">Fitness Goal</label>
+        <select class="dropdown_sheet" id="fitness_goal" name="fitness_goal">
+          <option value="">Select your fitness goal</option>
+          <option value="weight">Loose Weight</option>
+          <option value="muscle">Gain Muscle</option>
+          <option value="strength">Improve Strength</option>
+          <option value="fitness">Gain Fitness</option>
+          <option value="all">All of the above</option>
+        </select>
+        <p class="error" id="fitness-error"></p>
+      </div>
+
+      <button type="submit" value="Submit">Register</button>
+    </form>
+  </div>
+</section>
+      
+  <!-- footer for navigation-->
+  <section class="footer">    
+    <div class="box-container">
+      <div class="box">
+          <h3> Fitness BOT</h3>
+          <p>
+              Our goal at Fitness Bot is to provide you with the best experience in your fitness journey, 
+              We help people in choosing their diets, to purchase quality products and provide them with the latest trends in fitness.
+          </p>
+      </div>
+
+      <div class="box">
+          <h3>Contact Us</h3>
+          <a>119</a>
+          <a>contactus@fitnessbot.com</a>
+          <a>IIT, Sri Lanka</a>
+      </div>
+
+      <div class="box">
+          <h3>Quick Links</h3>
+          <a href="../buy_page/buy_products_html.html">Buy products</a>
+          <a href="../gallery_page/gallery_page_html.html">Gallery Page</a>
+          <a href="../quiz_page/quiz_page_html.html">Quiz</a>
+          <a href="#">Register</a>
+          <a href="../leaderboad_page/leaderboard_page_html.html">LeaderBoard</a>
+      </div>
+
+      <div class="box">
+          <h3>About Us</h3>
+          <a href="../aboutUs_page/aboutUs_html.html">Editors</a>
+          <a href="../aboutUs_page/uzman_editor_page.html">Student 1</a>
+          <a href="../aboutUs_page/haroon_editor_page.html">Student 2</a>
+          <a href="../aboutUs_page/gaindu_editor_page.html">Student 3</a>
+          <a href="../aboutUs_page/seth_editor_page.html">Student 4</a>
+      </div>
+    </div>
+  </section>
+      
+</body>
+
+<!-- editor footer -->
+<footer class="editor">
+  <h2><br>Editor: <a href="../aboutUs_page/uzman_editor_page.html">Uzman Arfan</a><br><br></h2>
+</footer>
+</html>

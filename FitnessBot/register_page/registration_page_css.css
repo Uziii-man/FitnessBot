@@ -1,0 +1,57 @@
+/* registration page style sheet designed by Uzman */
+#form {
+    width: 600px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: #de4f61;
+    border: none;
+    border-radius: 4px;
+}
+
+.register_section{
+    padding-bottom: 60px;
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputbox input {
+    border: 2px solid #de4f61;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.inputbox .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.dropdown_sheet{
+    border: 2px solid #de4f61;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.labelname{
+    color: #000;
+    font-size: 14px;
+}

@@ -1,0 +1,42 @@
+<leaderBoard>
+    <people id="be129">
+        <name>Jhone</name>
+        <points>70</points>
+    </people>
+    <people id="be130">
+        <name>Wick</name>
+        <points>45</points>
+    </people>
+    <people id="be131">
+        <name>Ann</name>
+        <points>88</points>
+    </people>
+    <people id="be132">
+        <name>Jesse</name>
+        <points>56</points>
+    </people>
+    <people id="be133">
+        <name>Ronn</name>
+        <points>44</points>
+    </people>
+    <people id="be134">
+        <name>Tommy</name>
+        <points>50</points>
+    </people>
+    <people id="be135">
+        <name>Michel</name>
+        <points>96</points>
+    </people>
+    <people id="be136">
+        <name>Jhoshua</name>
+        <points>87</points>
+    </people>
+    <people id="be137">
+        <name>Shown</name>
+        <points>75</points>
+    </people>
+    <people id="be138">
+        <name>Manny</name>
+        <points>56</points>
+    </people>
+</leaderBoard>

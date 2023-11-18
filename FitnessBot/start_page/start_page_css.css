@@ -1,0 +1,158 @@
+/* Start Page CSS designed by Uzman Arfan*/
+
+/* Scroll Bar */
+/* common for all  */
+:root{
+    --primary:#de4f61;
+    --white: #fff;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--primary);
+    border-radius: 5rem;
+}
+
+/*--------for all---------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: black, transparent;
+}
+
+/*---------video---------*/
+.video{
+    width: auto;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,52,0.3),(12,3,52,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---------navigation bar---------*/
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 250px;
+    cursor: pointer;
+}
+
+.content{
+    text-align: center;
+}
+
+/*---------for the site name---------*/
+.content h1{
+    font-size: 150px;
+    color: #de4f61;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+/*-----code take from the easy tutorial to correct the video when extend-----*/
+.content h1:hover{
+    -webkit-text-stroke: 2px #de4f61;
+    color: transparent;
+}
+
+/*-----for the direct button----*/
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #de4f61;
+    font-size: 24px;
+    border: 2px solid #de4f61;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.background_video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/*-----code take from the easy tutorial to correct the video when extend-----*/
+@media (min-aspect-ratio: 16/9){
+    .background_video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .background_video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/*------for the team members-----*/
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 1.5rem;
+}
+
+.box-container .box{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.heading{
+    font-size: 30px;
+    margin-bottom: 1rem;
+    color: #de4f61
+}
+
+.box-container .box  h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffc3c3;
+    font-size: 20px;
+}
+
+/* editor reference */
+footer{
+    text-align: center;
+    background-color: black;
+    color: #de4f61;
+    font-size: 14px;
+}
+
+ /* selected link */
+a:link {
+    color: #de4f61;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+  
